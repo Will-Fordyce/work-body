@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/list_item_book_rated_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:clickable="false"
+        android:padding="4dp"
+        android:text="@string/rating_label" />
+
+    <TextView
+        android:id="@+id/list_item_book_title_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/list_item_book_rated_text_view"
+        android:padding="4dp"
+        android:text="BookTitle"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/list_item_book_date_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/list_item_book_title_text_view"
+        android:layout_toLeftOf="@id/list_item_book_rated_text_view"
+        android:padding="4dp"
+        android:text="" />
+</RelativeLayout>
